@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+h1 {
+    display: none;
+}
+
+h2 {
+    display: none;
+}
+
+
+
+header #banner {
+    display: flex;
+    flex-direction: column;
+}
+
+header #banner .banner-top {
+    display: flex;
+    justify-content: center;
+}
+
+header #banner .banner-top .header-logo {
+    display: inline-flex;
+}
+
+header #banner .banner-top aside {
+    display: flex;
+}
+
+header #banner .banner-top aside .header-ad-image {
+    display: flex;
+}
+
+header #banner .banner-top aside .header-ad-text {
+    background-color: #000;
+    color: #fff;
+}
+
+span 
+text-transform: uppercase;
+transform: ;
+
+header #banner .banner-bottom {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header #banner .banner-bottom div:first-child {
+    background-color: #ff3301;
+}
