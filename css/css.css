@@ -1,8 +1,13 @@
-body{
+body {
     margin: 0;
     padding: 0;
     max-width: fit-content;
     margin: 0 auto;
+}
+
+@font-face {
+  font-family: Boogaloo;
+  src: url(../assets/fonts/Boogaloo-Regular.ttf);
 }
 
 h1 {
@@ -13,45 +18,161 @@ h2 {
     display: none;
 }
 
-
-
-header #banner {
+.banner-wrapper {
     display: flex;
     flex-direction: column;
 }
 
-header #banner .banner-top {
+.banner-wrapper .banner-top {
     display: flex;
     justify-content: center;
 }
 
-header #banner .banner-top .header-logo {
+.banner-wrapper .banner-top .banner-logo {
     display: inline-flex;
 }
 
-header #banner .banner-top aside {
+.banner-wrapper .banner-top aside {
     display: flex;
 }
 
-header #banner .banner-top aside .header-ad-image {
+.banner-wrapper .banner-top aside .banner-ad-image {
     display: flex;
 }
 
-header #banner .banner-top aside .header-ad-text {
+.banner-wrapper .banner-top aside .banner-ad-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #000;
     color: #fff;
+    text-transform: uppercase;
+    font-family: 'Boogaloo';
 }
 
-span 
-text-transform: uppercase;
-transform: ;
+.rotate-90 {
+    display: block;
+    height: fit-content;
+    transform: rotate(90deg);
+}
 
-header #banner .banner-bottom {
+header .banner-wrapper .banner-bottom {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-header #banner .banner-bottom div:first-child {
+header .banner-wrapper .banner-bottom div:first-child {
+    height: 5.4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #ff3301;
+    font-family: Boogaloo;
+    text-transform: uppercase;
+}
+
+header .banner-wrapper .banner-bottom div:first-child span,
+header .banner-wrapper .banner-bottom div:first-child img {
+    margin-left: .2rem;
+}
+
+header .banner-wrapper .banner-bottom div:first-child:hover {
+    background-color: #669900;
+    cursor: pointer;
+}
+
+.bood-red-color {
+    color: #660000;
+}
+
+.crayola-orange-yellow-color {
+    color: #ffcc66;
+}
+
+.white-color {
+    color: #ffffff;
+}
+
+header .banner-bottom .warning-message{
+    font-size: .8rem;
+    font-family: verdana, helvetica, arial;
+    margin: .5vh 0;
+}
+
+header nav section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000;
+    font-family: Boogaloo;
+    height: 5vh;
+    color: #ffffff;
+}
+
+header nav section button {
+    font-family: Boogaloo;
+    text-transform: uppercase;
+    background-color: #d00000;
+    color: #ffffff;
+    cursor: pointer;
+    border: 0;
+    border-radius: 50%;
+    margin-left: .5rem;
+}
+
+header nav section label {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    padding: 0;
+    margin: .5vh 0;
+    display: flex;
+    justify-content: space-between;
+    font-family: Boogaloo;
+}
+
+header nav ul li {
+    list-style: none;
+    background-color: #000000;
+    padding: 2px 7px;
+    border-radius: 7px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+main #spotlight img {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
+footer #legalities {
+    margin: 1.2rem 0;
+}
+
+footer #legalities a {
+    font-family: helvetica, arial;
+    font-size: .8rem;
+    color: #ff6600;
+}
+
+footer #copyright-information {
+    margin: 1.2rem 0;
+}
+
+footer #copyright-information p {
+    text-align: center;
+    margin: 0;
+    font-size: .7rem;
 }

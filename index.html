@@ -15,38 +15,44 @@
     <header>
         <h1>Cartoon Network 2000 Clone</h1>
         
-        <section id="banner">
+        <div class="banner-wrapper">
             <h2>Banner</h2>
 
             <div class="banner-top">
-                <div class="header-logo">
-                    <img src="./img/logo.gif" alt="webpage logo">
+                <div class="banner-logo">
+                    <img src="./assets/img/logo.gif" alt="webpage logo">
                 </div>
-                
+
                 <aside>
-                    <div class="header-ad-image">
-                        <img src="./img/ad.gif" alt="brand advertising banner">
+                    <div class="banner-ad-image">
+                        <img src="./assets/img/header-ad.gif" alt="brand advertising banner">
                     </div>
                     
-                    <div class="header-ad-text">
-                        ad
+                    <div class="banner-ad-text">
+                        <span class="rotate-90">ad</span>
                     </div>
                 </aside>
             </div>
 
             <div class="banner-bottom">
-                <div>Without the flash plug-in, you're missing half the fun! Click here to get flash</div>
-                <div>If you know you have Flash and feel you have reached this page in error, <a href="#">click here</a>.</div>
-            </div>
-        </section>
+                <div>
+                    <span class="bood-red-color">Without the flash plug-in,</span> 
+                    <span class="crayola-orange-yellow-color">you're missing half the fun!</span> 
+                    <span class="white-color">Click here to get flash!</span>
+                    <img src="./assets/img/get-flash.gif" alt="get flash logo">
+                </div>
 
-        
+                <div class="warning-message">
+                    If you know you have Flash and feel you have reached this page in error, <a href="#">click here</a>.
+                </div>
+            </div>
+        </div>
 
         <nav>
             <h2>Navigation</h2>
             
             <section id="">
-                <label>
+                <label for="characters">
                     Choose a character:
                     <select name="characters" id="characters">
                         <option value="" selected disabled>Choose</option>
@@ -62,7 +68,7 @@
                     </select>
                 </label>
             
-                <label>
+                <label for="">
                     Search:
                     <input type="text" name="" id="">
                     <button>Go</button>
@@ -82,5 +88,69 @@
             </ul>
         </nav>
     </header>
+            
+
+    <main>
+        <section id="spotlight">
+            <img src="./assets/img/spotlight.gif" alt="spotlight main image">
+        </section>
+        
+        <section id="characters">
+            
+        </section>
+
+        <section id="featured">
+            <article>
+                <img src="./assets/img/shop-cn.gif" alt="">
+                <p>Free shipping on Your First Order Click Here for Details</p>    
+            </article>
+            
+            <article>
+                <img src="./assets/img/boomerang.gif" alt="">
+                <p>It's all coming back to you. Click Here!</p>
+            </article>
+            
+            <article>
+                <img src="./assets/img/jbvo.gif" alt="">
+                <p>Click Here!</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <section id="legalities">
+            <a href="#">Privacy Policy.</a>
+        </section>
+
+        <section id="footer-banner">
+            <div class="banner-wrapper">
+                <div class="banner-top">
+                    <div class="banner-logo">
+                        <img src="./assets/img/cn-international.gif" alt="webpage logo">
+                    </div>
+
+                    <aside>
+                        <div class="banner-ad-image">
+                            <img src="./assets/img/footer-ad.gif" alt="brand advertising banner">
+                        </div>
+                        
+                        <div class="banner-ad-text">
+                            <span class="rotate-90">ad</span>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section id="copyright-information">
+            <p>TM and (R) are trademarks of Nintendo of America Inc.</p>
+            <p>For Terms and Conditions of Use click here.</p>
+            <p>USE OF THIS SITE SIGNIFIES YOUR AGREEMENT TO THE TERMS OF USE.</p>
+            <p>TM & © 2000 Cartoon Network. A Time Warner Company. All Rights Reserved.</p>
+            <p>All characters on this site are protected by trademark and other rights. Click here for details.</p>
+            <p>For information on sales opportunities, e-mail cartoon@sales.turner.com.</p>
+        </section>
+    </footer>
+
 </body> 
 </html>
