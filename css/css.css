@@ -47,8 +47,11 @@ header .plugins-wrapper div:first-child {
     justify-content: center;
     align-items: center;
     background-color: #ff3301;
+    border-top: .5rem solid #ff3301;
+    border-bottom: .5rem solid #ff3301;
     font-family: Boogaloo;
     text-transform: uppercase;
+
 }
 
 header .plugins-wrapper div:first-child * {
@@ -57,6 +60,8 @@ header .plugins-wrapper div:first-child * {
 
 header .plugins-wrapper div:first-child:hover {
     background-color: #669900;
+    border-top: .5rem solid #669900;
+    border-bottom: .5rem solid #669900;
     cursor: pointer;
 }
 
@@ -75,7 +80,7 @@ header .plugins-wrapper div:first-child:hover {
 header .plugins-wrapper .warning-message{
     font-size: .8rem;
     font-family: verdana, helvetica, arial;
-    margin: .5vh 0;
+    margin: .5rem 0;
 }
 
 .menu-icon {
@@ -95,6 +100,7 @@ header nav section {
     align-items: center;
     background-color: #000000;
     font-family: Boogaloo;
+    border: .5rem solid #000000;
     color: #ffffff;
 }
 
@@ -125,8 +131,12 @@ header nav ul#nav-menu {
     margin: .2rem 0;
     display: none;
     flex-direction: column;
-    align-items: center;
     font-family: Boogaloo;
+    align-items: stretch;
+    width: 50%;
+    margin: 0px auto 0.5rem;
+    text-align: center;
+    font-size: 1.3rem;
 }
 
 header nav ul li {
@@ -140,6 +150,11 @@ header nav ul li {
 header nav ul li a {
     text-decoration: none;
     color: #ffffff;
+}
+
+main #spotlight {
+    display: flex;
+    flex-direction: column;
 }
 
 main #spotlight img {
@@ -169,6 +184,10 @@ section#featured article {
     padding: 0 .4rem;
 }
 
+section#featured article img {
+        min-width: 50%;
+    }
+
 section#featured article:nth-child(2) {
     border-top: 0;
 }
@@ -187,6 +206,10 @@ footer #legalities a {
     font-family: helvetica, arial;
     font-size: .8rem;
     color: #ff6600;
+}
+
+footer #footer-banner {
+    width: 100%;
 }
 
 footer #copyright-information {
@@ -268,6 +291,7 @@ footer #copyright-information p {
         justify-content: center;
         align-items: center;
         background-color: #ff3301;
+        border: 0;
         font-family: Boogaloo;
         text-transform: uppercase;
     }
@@ -279,6 +303,7 @@ footer #copyright-information p {
 
     header .plugins-wrapper div:first-child:hover {
         background-color: #669900;
+        border: 0;
         cursor: pointer;
     }
 
@@ -306,6 +331,7 @@ footer #copyright-information p {
         justify-content: space-around;
         align-items: center;
         background-color: #000000;
+        border: 0;
         font-family: Boogaloo;
         height: 1.8rem;
         color: #ffffff;
@@ -340,6 +366,10 @@ footer #copyright-information p {
     header nav ul#nav-menu {
         display: flex;
         flex-direction: row;
+        margin: .2rem 0;
+        width: auto;
+        align-items: center;
+        font-size: 1rem;
     }
 
     nav .menu-icon {
@@ -357,6 +387,11 @@ footer #copyright-information p {
     header nav ul li a {
         text-decoration: none;
         color: #ffffff;
+    }
+
+    main #spotlight {
+        flex-direction: row;
+        justify-content: center;
     }
 
     main #spotlight img {
@@ -387,6 +422,8 @@ footer #copyright-information p {
         border-top: 0;
         padding: 0 .4rem;
     }
+
+    
 
     .flex-column {
         flex-direction: column;
