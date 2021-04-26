@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    max-width: fit-content;
+    max-width: 38.43rem;
     margin: 0 auto;
 }
 
@@ -10,37 +10,28 @@ body {
   src: url(../assets/fonts/Boogaloo-Regular.ttf);
 }
 
-h1 {
-    display: none;
-}
-
-h2 {
+h1, h2, h3 {
     display: none;
 }
 
 .banner-wrapper {
     display: flex;
-    flex-direction: column;
-}
-
-.banner-wrapper .banner-top {
-    display: flex;
     justify-content: center;
 }
 
-.banner-wrapper .banner-top .banner-logo {
+.banner-wrapper .banner-logo {
     display: inline-flex;
 }
 
-.banner-wrapper .banner-top aside {
+.banner-wrapper aside {
     display: flex;
 }
 
-.banner-wrapper .banner-top aside .banner-ad-image {
+.banner-wrapper aside .banner-ad-image {
     display: flex;
 }
 
-.banner-wrapper .banner-top aside .banner-ad-text {
+.banner-wrapper aside .banner-ad-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,14 +47,14 @@ h2 {
     transform: rotate(90deg);
 }
 
-header .banner-wrapper .banner-bottom {
+header .plugins-wrapper {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-header .banner-wrapper .banner-bottom div:first-child {
-    height: 5.4vh;
+header .plugins-wrapper div:first-child {
+    height: 1.8rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,12 +63,12 @@ header .banner-wrapper .banner-bottom div:first-child {
     text-transform: uppercase;
 }
 
-header .banner-wrapper .banner-bottom div:first-child span,
-header .banner-wrapper .banner-bottom div:first-child img {
+header .plugins-wrapper div:first-child span,
+header .plugins-wrapper div:first-child img {
     margin-left: .2rem;
 }
 
-header .banner-wrapper .banner-bottom div:first-child:hover {
+header .plugins-wrapper div:first-child:hover {
     background-color: #669900;
     cursor: pointer;
 }
@@ -94,7 +85,7 @@ header .banner-wrapper .banner-bottom div:first-child:hover {
     color: #ffffff;
 }
 
-header .banner-bottom .warning-message{
+header .plugins-wrapper .warning-message{
     font-size: .8rem;
     font-family: verdana, helvetica, arial;
     margin: .5vh 0;
@@ -106,7 +97,7 @@ header nav section {
     align-items: center;
     background-color: #000000;
     font-family: Boogaloo;
-    height: 5vh;
+    height: 1.8rem;
     color: #ffffff;
 }
 
@@ -149,6 +140,38 @@ header nav ul li a {
 
 main #spotlight img {
     width: 100%;
+}
+
+section#characters {
+    margin: .3rem 0;
+}
+
+section#characters img {
+    width: 100%;
+}
+
+
+section#featured {
+    display: flex;
+    font-family: verdana, helvetica, arial;
+    font-weight: bold;
+    font-size: .6rem;
+}
+
+section#featured article {
+    display: flex;
+    align-items: center;
+    border-left: .3rem solid #000000;
+    padding: 0 .4rem;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+section#featured article:nth-child(2) {
+    border-left: 0;
+    flex-basis: 40%;
 }
 
 footer {

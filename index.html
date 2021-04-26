@@ -11,14 +11,14 @@
     <!-- https://web.archive.org/web/20001019035652/http://www.cartoonnetwork.com/index.getflash.html -->
     <!-- https://web.archive.org/web/20001109172000/http://cartoonnetwork.com/index.getflash.html -->
     <!-- https://web.archive.org/web/20001018130847/http://cartoonnetwork.com/index.getflash.html -->
+    
+    <h1>Cartoon Network 2000 Clone</h1>
 
     <header>
-        <h1>Cartoon Network 2000 Clone</h1>
-        
-        <div class="banner-wrapper">
-            <h2>Banner</h2>
-
-            <div class="banner-top">
+        <h2>Header</h2>    
+        <section id="header-banner">
+            <h3>Banner top</h3>
+            <div class="banner-wrapper">
                 <div class="banner-logo">
                     <img src="./assets/img/logo.gif" alt="webpage logo">
                 </div>
@@ -33,23 +33,26 @@
                     </div>
                 </aside>
             </div>
+        </section>
 
-            <div class="banner-bottom">
+        <section id="plugins">
+            <h3>Plugins</h3>
+            <div class="plugins-wrapper">
                 <div>
-                    <span class="bood-red-color">Without the flash plug-in,</span> 
-                    <span class="crayola-orange-yellow-color">you're missing half the fun!</span> 
+                    <span class="bood-red-color">Without the flash plug-in,</span>
+                    <span class="crayola-orange-yellow-color">you're missing half the fun!</span>
                     <span class="white-color">Click here to get flash!</span>
                     <img src="./assets/img/get-flash.gif" alt="get flash logo">
                 </div>
-
+            
                 <div class="warning-message">
                     If you know you have Flash and feel you have reached this page in error, <a href="#">click here</a>.
                 </div>
             </div>
-        </div>
+        </section>
 
         <nav>
-            <h2>Navigation</h2>
+            <h3>Navigation</h3>
             
             <section id="">
                 <label for="characters">
@@ -91,58 +94,66 @@
             
 
     <main>
+        <h2>Main Section</h2>
+        
         <section id="spotlight">
+            <h3>Spotlight</h3>
             <img src="./assets/img/spotlight.gif" alt="spotlight main image">
         </section>
         
         <section id="characters">
-            
+            <h3>Characters</h3>
+            <img src="./assets/img/favorites.gif" alt="favorites characters">
         </section>
 
         <section id="featured">
+            <h3>Featured</h3>
             <article>
                 <img src="./assets/img/shop-cn.gif" alt="">
-                <p>Free shipping on Your First Order Click Here for Details</p>    
+                <p>Free shipping on Your First Order <a href="#">Click Here for Details</a></p>    
             </article>
             
             <article>
                 <img src="./assets/img/boomerang.gif" alt="">
-                <p>It's all coming back to you. Click Here!</p>
+                <p>It's all coming back to you. <a href="#">Click Here!</a></p>
             </article>
             
-            <article>
+            <article class="flex-column">
                 <img src="./assets/img/jbvo.gif" alt="">
-                <p>Click Here!</p>
+                <p><a href="#">Click Here!</a></p>
             </article>
         </section>
     </main>
 
     <footer>
+        <h2>Footer</h2>
+
         <section id="legalities">
+            <h3>Legalities</h3>
             <a href="#">Privacy Policy.</a>
         </section>
 
         <section id="footer-banner">
+            <h3>Footer banner</h3>
             <div class="banner-wrapper">
-                <div class="banner-top">
-                    <div class="banner-logo">
-                        <img src="./assets/img/cn-international.gif" alt="webpage logo">
-                    </div>
-
-                    <aside>
-                        <div class="banner-ad-image">
-                            <img src="./assets/img/footer-ad.gif" alt="brand advertising banner">
-                        </div>
-                        
-                        <div class="banner-ad-text">
-                            <span class="rotate-90">ad</span>
-                        </div>
-                    </aside>
+                <div class="banner-logo">
+                    <img src="./assets/img/cn-international.gif" alt="webpage logo">
                 </div>
+
+                <aside>
+                    <div class="banner-ad-image">
+                        <img src="./assets/img/footer-ad.gif" alt="brand advertising banner">
+                    </div>
+                    
+                    <div class="banner-ad-text">
+                        <span class="rotate-90">ad</span>
+                    </div>
+                </aside>
             </div>
         </section>
 
         <section id="copyright-information">
+            <h3>Copyright information</h3>
             <p>TM and (R) are trademarks of Nintendo of America Inc.</p>
             <p>For Terms and Conditions of Use click here.</p>
             <p>USE OF THIS SITE SIGNIFIES YOUR AGREEMENT TO THE TERMS OF USE.</p>
