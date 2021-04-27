@@ -162,10 +162,6 @@ main #spotlight img {
 }
 
 section#characters {
-    margin: .3rem 0;
-}
-
-section#characters {
     display: none;
 }
 
@@ -225,23 +221,11 @@ footer #copyright-information p {
 @media only screen and (min-width: 768px) {
     /* For desktop: */
     body {
-        margin: 0;
-        padding: 0;
         max-width: 38.43rem;
         margin: 0 auto;
     }
 
-    @font-face {
-    font-family: Boogaloo;
-    src: url(../assets/fonts/Boogaloo-Regular.ttf);
-    }
-
-    h1, h2, h3 {
-        display: none;
-    }
-
     .banner-wrapper {
-        display: flex;
         justify-content: center;
         flex-direction: row;
     }
@@ -278,22 +262,10 @@ footer #copyright-information p {
         transform: rotate(90deg);
     }
 
-    header .plugins-wrapper {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
     header .plugins-wrapper div:first-child {
         height: 1.8rem;
-        display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        background-color: #ff3301;
         border: 0;
-        font-family: Boogaloo;
-        text-transform: uppercase;
     }
 
     header .plugins-wrapper div:first-child span,
@@ -302,57 +274,18 @@ footer #copyright-information p {
     }
 
     header .plugins-wrapper div:first-child:hover {
-        background-color: #669900;
         border: 0;
-        cursor: pointer;
-    }
-
-    .bood-red-color {
-        color: #660000;
-    }
-
-    .crayola-orange-yellow-color {
-        color: #ffcc66;
-    }
-
-    .white-color {
-        color: #ffffff;
-    }
-
-    header .plugins-wrapper .warning-message{
-        font-size: .8rem;
-        font-family: verdana, helvetica, arial;
-        margin: .5vh 0;
     }
 
     header nav section {
-        display: flex;
         flex-direction: row;
         justify-content: space-around;
-        align-items: center;
-        background-color: #000000;
         border: 0;
-        font-family: Boogaloo;
         height: 1.8rem;
-        color: #ffffff;
     }
-
-    header nav section button {
-        font-family: Boogaloo;
-        text-transform: uppercase;
-        background-color: #d00000;
-        color: #ffffff;
-        cursor: pointer;
-        border: 0;
-        border-radius: 50%;
-        margin-left: .5rem;
-    }
-
+    
     header nav section label {
-        text-transform: uppercase;
-        display: flex;
         flex-direction: row;
-        align-items: center;
     }
 
     header nav ul {
@@ -377,25 +310,13 @@ footer #copyright-information p {
     }
 
     header nav ul li {
-        list-style: none;
-        background-color: #000000;
         margin-top: 0;
-        padding: 2px 7px;
         border-radius: 7px;
-    }
-
-    header nav ul li a {
-        text-decoration: none;
-        color: #ffffff;
     }
 
     main #spotlight {
         flex-direction: row;
         justify-content: center;
-    }
-
-    main #spotlight img {
-        width: 100%;
     }
 
     section#characters {
@@ -408,11 +329,7 @@ footer #copyright-information p {
     }
 
     section#featured {
-        display: flex;
         flex-direction: row;
-        font-family: verdana, helvetica, arial;
-        font-weight: bold;
-        font-size: .6rem;
     }
 
     section#featured article {
@@ -420,10 +337,7 @@ footer #copyright-information p {
         align-items: center;
         border-left: .3rem solid #000000;
         border-top: 0;
-        padding: 0 .4rem;
     }
-
-    
 
     .flex-column {
         flex-direction: column;
@@ -432,31 +346,5 @@ footer #copyright-information p {
     section#featured article:nth-child(2) {
         border-left: 0;
         flex-basis: 40%;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-        
-    footer #legalities {
-        margin: 1.2rem 0;
-    }
-
-    footer #legalities a {
-        font-family: helvetica, arial;
-        font-size: .8rem;
-        color: #ff6600;
-    }
-
-    footer #copyright-information {
-        margin: 1.2rem 0;
-    }
-
-    footer #copyright-information p {
-        text-align: center;
-        margin: 0;
-        font-size: .7rem;
     }
 }
