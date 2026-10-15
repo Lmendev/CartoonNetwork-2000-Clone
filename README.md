@@ -1,3 +1,4 @@
+> 🗄️ This project is complete and archived. It's kept as a learning showcase — check out the [live demo](https://lmendev.github.io/CartoonNetwork-2000-Clone/)!
 # CartoonNetwork in 2000 | Web Page Clone
 Clone of Cartoon Network website in 00's for educational purposes.
 
